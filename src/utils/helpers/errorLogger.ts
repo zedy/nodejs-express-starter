@@ -18,7 +18,7 @@ const myFormat = printf(({
 const logger = createLogger({
   level: 'error',
   format: combine(
-    label({ label: 'Cinch-logger' }),
+    label({ label: 'Logger' }),
     timestamp({
       format: 'DD-MMM-YYYY | HH:mm:ss',
     }),
