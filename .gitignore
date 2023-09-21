@@ -1,0 +1,13 @@
+# Node
+/node_modules
+
+# Prod
+/dist
+*.tsbuildinfo
+
+# Environment Variables
+.env
+.env.*
+
+# Files
+error.log

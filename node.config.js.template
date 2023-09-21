@@ -1,0 +1,28 @@
+module.exports = {
+    apps: [
+        {
+            name: 'nodejs-express-starter',
+            script: 'dist/index.js',
+            watch: true,
+            ignore_watch: ["uploads"],
+            exp_backoff_restart_delay: 100,
+            env_production: {
+                PORT: 3000,
+                NODE_ENV: "development",
+                REPLACE_ME: "TEST",
+            },
+        },
+        {
+            name: 'rabbitmq-subscriber',
+            script: 'dist/utils/rabbitmq/subscriber.js',
+            watch: true,
+            ignore_watch: ["uploads"],
+            exp_backoff_restart_delay: 100,
+            env_production: {
+                PORT: 5672,
+                NODE_ENV: "development",
+                REPLACE_ME: "TEST",
+            },
+        }
+    ],
+}
